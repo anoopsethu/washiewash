@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+.intro-section{
+	height: 100vh;
+	background: rgb(53,148,247);
+	background: linear-gradient(0deg, rgba(53,148,247,1) 0%, rgba(149,199,250,1) 100%);
+	overflow-y: hidden;
+}
+.navbar{
+	padding: 40px 0px;
+	margin-bottom: 5.5vh;
+}
+.navbar-logo{
+	max-height: 40px;
+}
+.widget-container{
+	float: right;
+}
+.widget{
+	max-height: 65vh;
+	box-shadow: 0px 0px 60px rgba(0,0,0,0.1);
+	float: right;
+}
+.content-container{
+	position: relative;
+}
+.content-inner-container{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-55%);
+}
+.content-container h1{
+	font-weight: 900;
+	font-size: 52px;
+	margin: 0px 0px 30px 0px;
+	color: #fff;
+}
+.content-container h4{
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 1.4;
+	margin: 0px 0px 40px 0px;
+	color: #fff;
+}
+.chrome-cta-container{
+	opacity: 1;
+	transition: all 0.1s ease-in;
+}
+.chrome-cta-container:hover{
+	opacity: 0.75;
+}
+.chrome-cta-container img{
+	max-height: 80px;
+	border-radius: 4px;
+}
+.maker-info{
+	font-size: 16px;
+	color: #fff;
+}
+.maker-info-md{
+	float: right;
+	margin-top: 10px;
+}
+.maker-info-sm{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0px 40px 0px;
+}
+
+
+@media(max-width: 800px){
+	.intro-section{
+		min-height: 100vh;
+		height: auto;
+		overflow-y: auto;
+	}
+	.navbar{
+		padding: 20px 0px;
+		margin-bottom: 20px;
+	}
+	.navbar img{
+		max-height: 36px;
+		/*margin: 0 auto;
+		display: block;*/
+	}
+	.widget-container{
+		float: none;
+	}
+	.widget{
+		max-width: 75%;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+	.content-inner-container{
+		position: relative;
+		top: auto;
+		transform: translateY(0);
+	}
+	.maker-info-md {
+		display: none;
+	}
+	.content-container h1{
+		text-align: center;
+		font-size: 32px;
+		margin: 35px 0px 20px 0px;
+	}
+	.content-container h4{
+		text-align: center;
+		font-size: 20px;
+		margin: 0px 0px 40px 0px;
+	}
+	.chrome-cta-container{
+		display: block;
+		width: 100%;margin-bottom: 40px;
+	}
+	.chrome-cta-container img{
+		max-height: 70px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+@media(min-width: 800px){
+	.maker-info-sm{
+		display: none !important;
+	}
+}
